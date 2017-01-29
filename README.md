@@ -1,2 +1,2 @@
-# template-metaprogramming-tutorials
-Code used in my series of blog posts on template metaprogramming. I offer possible solutions to some of the exercises presented in the posts and also a single file that can be used to observe how the code works.
+# Template Metaprogramming Tutorials Examples
+Here I am sharing the code used in my series of [blog posts](http://nilsdeppe.com) on template metaprogramming. In the files are my solutions to some of the exercises presented in the posts. Note that some of the later posts rely on a template metaprogramming library like [brigand](https://github.com/edouarda/brigand). The files require a C++11 compliant compiler to compile.
