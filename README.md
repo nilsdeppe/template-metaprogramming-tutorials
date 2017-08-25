@@ -3,3 +3,5 @@ Here I am sharing the code used in my series of [blog posts](http://nilsdeppe.co
 
 - [Part 1](http://nilsdeppe.com/posts/tmpl-part1)
 - [Part 2](http://nilsdeppe.com/posts/tmpl-part2)
+- [Part 3](http://nilsdeppe.com/posts/tmpl-part3)
+- [Part 4](http://nilsdeppe.com/posts/tmpl-part4)
