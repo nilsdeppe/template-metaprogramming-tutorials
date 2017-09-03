@@ -37,7 +37,7 @@ DEALINGS IN THE SOFTWARE.
 
 template <class... Lambdas>
 struct overload : Lambdas... {
-  overload(Lambdas... lambdas) : Lambdas(std::move(lambdas))... {}
+  explicit overload(Lambdas... lambdas) : Lambdas(std::move(lambdas))... {}
 
   using Lambdas::operator()...;
 };
