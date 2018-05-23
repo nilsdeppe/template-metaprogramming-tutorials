@@ -39,10 +39,17 @@ DEALINGS IN THE SOFTWARE.
 #include <initializer_list>
 #include <tuple>
 #include <type_traits>
-#include <unistd.h>  // needed on macOS for ssize_t
 #include <utility>
 
+using ssize_t = typename std::make_signed<std::size_t>::type;
+
+#if defined(__clang__) || defined(__GNUC__) || defined(__GNUG__)
 #define ALWAYS_INLINE __attribute__((always_inline)) inline
+#elif defined(_MSC_VER) && !defined(__INTEL_COMPILER)
+#define ALWAYS_INLINE __forceinline inline
+#else
+#define ALWAYS_INLINE inline  // :(
+#endif
 
 /*!
  * \ingroup UtilitiesGroup
